@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+loginbody
+{
+    display: flex;
+    background: #1d2b3a;
+    min-height: 100vh;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    flex-direction: column;
+    gap: 35px;
+    background-color: transparent;
+    margin: auto;
+    position: relative;
+    color: #555;
+    padding: 4px;
+    border: 1px solid currentColor;
+    border-radius: 90px;
+    height: 40px;
+    width: 450px;
+    top: 7px;
+}
+.welcome
+{
+    color: #fff;
+    font-size: 3em;
+    position: relative;
+    top: -30px;
+}
+.login
+{
+    position: relative;
+    width: 400px;
+}
+.login input
+{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.login span
+{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.login input:valid ~ span,
+.login input:focus ~ span
+{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+.login:nth-child(2) input:valid ~ span,
+.login:nth-child(2) input:focus ~ span
+{
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+.login input:valid,
+.login input:focus
+{
+    border: 1px solid #00dfc4;
+}
+loginbutton
+{
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 7px 40px;
+    transition: 0.5s;
+    border-bottom-color: #1d2b3a;
+}
+loginbutton:hover
+{
+    background: #39FF14;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px #39FF14;
+}
+loginbutton::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #1d2b3a;
+}
+loginbutton span
+{
+    position: relative;
+    z-index: 1;
+}
+loginbutton i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+loginbutton i::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: #1d2b3a;
+    transform: translateX(-400%) skewX(350deg);
+    transition: 0.5s;
+}
+loginbutton:hover i::before
+{
+    width: 20px;
+    right: 20%;
+}
+loginbutton i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    width: 10px;
+    height: 4px;
+    background: #1d2b3a;
+    transform: translateX(400%) skewX(350deg);
+    transition: 0.5s;
+}
+loginbutton:hover i::after
+{
+    width: 20px;
+    right: 80%;
+}
+
+registerbutton
+{
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 7px 40px;
+    transition: 0.5s;
+    border-bottom-color: #1d2b3a;
+}
+registerbutton:hover
+{
+    background: #1e9bff;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px #1e9bff;
+}
+registerbutton::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #1d2b3a;
+}
+registerbutton span
+{
+    position: relative;
+    z-index: 1;
+}
+registerbutton i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+registerbutton i::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: #1d2b3a;
+    transform: translateX(-450%) skewX(350deg);
+    transition: 0.5s;
+}
+registerbutton:hover i::before
+{
+    width: 20px;
+    right: 20%;
+}
+registerbutton i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    width: 10px;
+    height: 4px;
+    background: #1d2b3a;
+    transform: translateX(450%) skewX(350deg);
+    transition: 0.5s;
+}
+registerbutton:hover i::after
+{
+    width: 20px;
+    right: 80%;
+}
+
+button
+{
+    background-color: #1d2b3a;
+    border-right: 100px;
+    border-left: 100px;
+}

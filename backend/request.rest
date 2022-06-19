@@ -1,0 +1,33 @@
+###REGISTER
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "name": "abi",
+    "email": "abi@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+
+###LOGIN
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email" : "abi@gmail.com",
+    "password" : "123456"
+}
+
+
+###TOKEN
+GET http://localhost:4000/users
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsIm5hbWUiOiJhYmkiLCJlbWFpbCI6ImFiaUBnbWFpbC5jb20iLCJpYXQiOjE2NTU1MjY0NDIsImV4cCI6MTY1NTUyNjQ2N30.WgyyfZzB2czDzu2ZErNXMdM0Gd80rNTuDDIubIx7rWw
+
+
+###REFRESH TOKEN
+GET http://localhost:4000/token
+
+
+###LOGOUT
+DELETE http://localhost:4000/logout
